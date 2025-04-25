@@ -4,9 +4,9 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Test') {
             steps {
-                sh 'echo12345 "Fail!";'
+                sh 'echo  "This is Jenkins Pipeline JOB!";'
             }
         }
         stage('Deploy') {
