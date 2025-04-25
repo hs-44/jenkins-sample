@@ -9,11 +9,6 @@ pipeline {
                 sh 'echo  "This is Jenkins Pipeline JOB!";'
             }
         }
-        stage('Deploy') {
-            steps {
-                sh 'echo "Fail!";'
-            }
-        }
     }
     post {
         always {
@@ -27,9 +22,7 @@ pipeline {
             echo "Notify all the DevOps Team Members"
             echo 'I will only get executed if this fails'
             // aws sns publish --sns-arn ARN_SNS --message "Jenkins Job with name $JOB_NAME has failed with Build Number $BUILD_NUMBER"
-        }
-        unstable {
-            echo 'I will only get executed if this is unstable'
+        
         }
     }
 }
