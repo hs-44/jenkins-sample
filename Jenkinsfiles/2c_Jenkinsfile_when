@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Example Build') {
             steps {
-                echo 'Build Stage'
+                echo 'Build Stage Execution inside jenkinsfile'
             }
         }
         stage('Example Deploy') {
