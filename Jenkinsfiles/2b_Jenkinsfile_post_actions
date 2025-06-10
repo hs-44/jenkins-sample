@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'echo "This is Jenkins Pipeline JOB!";'
+                sh 'echo12345 "This is Jenkins Pipeline JOB!";'
             }
         }
     }
