@@ -9,6 +9,7 @@ pipeline {
                 sh 'echo Hello Jenkins'
                 sh 'echo Adding command to test webhook12'
                 sh 'echo Adding command to test webhook-today'
+                sh 'echo Adding command to test webhook-2025'
             }
         }
     }
