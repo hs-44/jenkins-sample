@@ -8,7 +8,7 @@ pipeline {
                 sh 'python --version'
                 sh 'echo Hello Jenkins'
                 sh 'echo Adding command to test webhook12'
-                sh 'echo Adding command to test webhook-'
+                sh 'echo Adding command to test webhook-july'
                 sh 'echo Adding command to test webhook-2025'
             }
         }
